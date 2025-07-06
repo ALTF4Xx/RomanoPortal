@@ -26,11 +26,11 @@ body {
 .card {
   background: rgba(0, 23, 55, 0.5);
   backdrop-filter: blur(12px);
-  padding: 2.5rem 3rem; /* extra horizontal padding */
+  padding: 2.5rem 3rem;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 136, 255, 0.2);
   text-align: center;
-  max-width: 600px; /* wider max width */
+  max-width: 600px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -83,6 +83,11 @@ body {
   color: #fff;
 }
 
+.github {
+  background: #333333;
+  color: #fff;
+}
+
 .email {
   background: #495057;
   color: #fff;
@@ -92,6 +97,10 @@ body {
 .btn:hover {
   transform: translateY(-2px);
   filter: brightness(1.15);
+}
+
+.github:hover {
+  filter: brightness(1.2);
 }
 
 /* Responsive */
@@ -112,4 +121,3 @@ body {
     font-size: 0.85rem;
     padding: 0.6rem;
   }
-}
