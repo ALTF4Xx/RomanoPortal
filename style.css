@@ -1,0 +1,115 @@
+/* Reset + base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #000814, #001d3d, #000814);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(0, 23, 55, 0.5);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 3rem; /* extra horizontal padding */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 136, 255, 0.2);
+  text-align: center;
+  max-width: 600px; /* wider max width */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* single line header style */
+.single-line-header {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+/* Button Colors */
+.romanoweb {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: none;
+}
+
+.instagram {
+  background: linear-gradient(to right, #fd1d1d, #833ab4);
+  color: #fff;
+}
+
+.youtube {
+  background: #ff0000;
+  color: #fff;
+}
+
+.topicals {
+  background: #ff7f11;
+  color: #fff;
+}
+
+.email {
+  background: #495057;
+  color: #fff;
+}
+
+/* Hover effects */
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.15);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .card {
+    max-width: 90vw;
+    padding: 2rem;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}
